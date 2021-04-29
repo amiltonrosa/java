@@ -5,7 +5,7 @@ public class TesteReferencias {
 
 		System.out.println("Funcionario:");
 
-		Funcionario f = new Funcionario();
+		Programador f = new Programador();
 		f.setNome("Amilton");
 		f.setCpf("354.654.768-84");
 		f.setProfissao("Programador");
@@ -24,7 +24,7 @@ public class TesteReferencias {
 		g.setCpf("254.687.453-24");
 		g.setProfissao("Administrador de Sistemas");
 		g.setSalario(5000);
-		g.setSenha(2342);
+		//g.setSenha(2342);
 
 		System.out.println("Nome: " + g.getNome());
 		System.out.println("CPF: " + g.getCpf());
