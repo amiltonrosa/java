@@ -8,8 +8,8 @@ public class TesteGerente {
 		g.setCpf("222.345.657-32");
 		g.setSalario(5000);
 
-		g.setSenha(8453);
-		boolean autenticou = g.autentica(8453);
+		g.setSenha(8354);
+		boolean autenticou = g.autentica(8354);
 
 		System.out.println("Nome: " + g.getNome());
 		System.out.println("CPF: " + g.getCpf());

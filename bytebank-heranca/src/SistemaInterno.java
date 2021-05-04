@@ -4,8 +4,7 @@ public class SistemaInterno {
 	private int senha = 2222;
 
 	public void autentica(Autenticavel a) {
-		boolean autenticou = a.autentica(this.senha);
-		if (autenticou) {
+		if (a.autentica(this.senha)) {
 			System.out.println("Acesso liberado.");
 		} else {
 			System.out.println("Acesso negado");
