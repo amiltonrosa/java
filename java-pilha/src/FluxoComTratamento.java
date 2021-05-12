@@ -1,5 +1,5 @@
 
-public class Fluxo {
+public class FluxoComTratamento {
 
 	// Função Main
 	public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class Fluxo {
 		try {
 			metodo1();
 		} catch (Exception e) {
-			System.out.println("Exception " + e.getMessage());
+			// System.out.println("Arithmetic Exception: ");
 			e.printStackTrace();
 		}
 		System.out.println("Fim do main");
@@ -23,11 +23,12 @@ public class Fluxo {
 	// Método 2
 	public static void metodo2() throws MinhaExcecao {
 		System.out.println("Inicio do metodo2");
-
-		Conta c = null;
-
-		throw new MinhaExcecao("Deu muito ruim!");
-
-		// System.out.println("Fim do metodo2");
+		for (int i = 0; i <= 5; i++) {
+			System.out.println(i);
+			// int a = i / 0;
+			Conta c = null;
+			c.deposita();
+		}
+		System.out.println("Fim do metodo2");
 	}
 }

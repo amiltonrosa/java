@@ -1,5 +1,6 @@
+import java.util.Iterator;
 
-public class Fluxo {
+public class FluxoComError {
 
 	// Função Main
 	public static void main(String[] args) {
@@ -14,20 +15,16 @@ public class Fluxo {
 	}
 
 	// Método 1
-	public static void metodo1() throws MinhaExcecao {
+	public static void metodo1() {
 		System.out.println("Inicio do metodo1");
 		metodo2();
 		System.out.println("Fim do metodo1");
 	}
 
 	// Método 2
-	public static void metodo2() throws MinhaExcecao {
-		System.out.println("Inicio do metodo2");
-
-		Conta c = null;
-
-		throw new MinhaExcecao("Deu muito ruim!");
-
-		// System.out.println("Fim do metodo2");
+	public static void metodo2() {
+		System.out.println("Inicio método 2");
+		System.out.println("Olá mundo cruel...");;
+		System.out.println("Fim do método 2");
 	}
 }
